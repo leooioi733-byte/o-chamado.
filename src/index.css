@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    font-family: var(--font-sans);
+    background-color: #12100d;
+    color: #f5efe6;
+  }
+}
+
+@keyframes slow-breath {
+  0%,
+  100% {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.06) translate3d(-0.6%, -0.4%, 0);
+  }
+}
+
+.animate-slow-breath {
+  animation: slow-breath 28s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-slow-breath {
+    animation: none;
+    transform: none;
+  }
+}

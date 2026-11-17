@@ -1,0 +1,8 @@
+{
+  "name": "O Chamado",
+  "description": "Jogo narrativo cristão da Flow Studios sobre o discípulo anônimo que seguiu Jesus desde o rio Jordão até a manhã da Ressurreição.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
